@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>My First BitStarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup/code/bootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup/code/social-buttons.css">
+    
     <script src="https://d396qusza40orc.cloudfront.net/startup/code/jquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup/code/bootstrapjs"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
@@ -74,29 +76,24 @@
       .statistics h3, .statistics p {
         color: white;
       }
-      //
-      .container {
-        width: 960px;
+      /* Marketing Copy and Footer */
+      .copy {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
       }
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-        padding: 10px 0px 10px 0px;
+      .asset {
+        padding: 2.5% 0%;
       }
-      .video, .thermometer, .order, .social {
-        border: 1px dotted;
+      .footer {
+        color: #cccccc;
         text-align: center;
       }
-      .video {
-        /* Internal borders have 1px width, thus need to add 4 x 1px to 120 px. */
-        height: 124px;
-        line-height: 124px;
+      .footer p {
+        font-size: 11px;
       }
-      .thermometer, .order, .social {
-        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
-        height: 40px;
-        line-height: 40px;
-      }
-      div.row {
-        border: 1px solid;
+      .footer a {
+        color: #ccccff;
       }
     </style>
   </head>
@@ -179,7 +176,64 @@
         <div class="span5 offset1 asset">
           <img class="img-polaroid" src="http://placehold.it/480x300">
         </div>
-      </div> <!-- ~marketing copy -->
+        <div class="span5 copy">
+          <p>
+            Loren ipsum
+          </p>
+        </div>
+      </div>
+      <div class="row-fluid section2">
+        <div class="span5 offset1 copy copy-right">
+          <p>
+            Loren ipsum dolor
+          </p>
+        </div>
+        <div class="span5 asset">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+        </div>
+      </div>
+      
+      <!-- FAQ -->
+      <div class="row-fluid faq">
+        <div class="span10 offset">
+          <h3>FAQ</h3>
+          <div class="accordion" id="accordion2">
+          
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                  What does FAQ stands for?
+                </a>
+              </div>
+              <div id="collapseOne" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  FAQ
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                  What's FAQ?
+                </a>
+              </div>
+              <div id="collapseOne" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  FAQ
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="row-fluid footer">
+        <div class="span12">
+          <p>Copytight</p>
+        </div>
+      </div>
     </div> <!-- ~container -->
   </body>
 </html>
